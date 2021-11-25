@@ -1,0 +1,35 @@
+#include <iostream.h>
+#include <conio.h>
+class Emp
+{
+    int E_id, E_salary;
+    char E_name[50];
+
+  public:
+    void input()
+    {
+        cout << "Enter Employee details: ";
+        cin >> E_id>> E_name >> E_salary;
+    }
+    void show()
+    {
+        cout << "Emp_id is="<< E_id;
+        cout << "Emp_name is=" << E_name;
+        cout << "Emp_salary is=" << E_salary;
+        
+    }
+};
+void main()
+{
+    Emp ob[3];
+    int i;
+    for (i = 0; i < 3; i++)
+    {
+        ob[i].input();
+    }
+    for (i = 0; i < 3; i++)
+    {
+        ob[i].show();
+    }
+    getch();
+}
